@@ -1,0 +1,172 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Blob animation */
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+/* Abstract floating animation */
+@keyframes abstract-float {
+  0% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+    opacity: 0.1;
+  }
+  25% {
+    transform: translate(-20px, -30px) rotate(3deg) scale(1.05);
+    opacity: 0.15;
+  }
+  50% {
+    transform: translate(10px, -50px) rotate(-2deg) scale(0.95);
+    opacity: 0.1;
+  }
+  75% {
+    transform: translate(-15px, -25px) rotate(2deg) scale(1.02);
+    opacity: 0.12;
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+    opacity: 0.1;
+  }
+}
+
+/* Binary code falling animation */
+@keyframes binary-fall {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.6;
+  }
+  90% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+
+/* Particle float animation */
+@keyframes particle-float {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0.4;
+  }
+  25% {
+    transform: translate(40px, -60px);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translate(80px, -40px);
+    opacity: 0.4;
+  }
+  75% {
+    transform: translate(40px, -80px);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 0.4;
+  }
+}
+
+/* Data pulse animation */
+@keyframes data-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+}
+
+/* Signal wave animation */
+@keyframes signal-wave {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+/* Circuit line animation */
+@keyframes circuit-glow {
+  0% {
+    stroke-dashoffset: 1000;
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 0.3;
+  }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animate-abstract-float {
+  animation: abstract-float 15s ease-in-out infinite;
+}
+
+.animate-binary-fall {
+  animation: binary-fall 15s linear infinite;
+}
+
+.animate-particle-float {
+  animation: particle-float 8s ease-in-out infinite;
+}
+
+.animate-data-pulse {
+  animation: data-pulse 3s ease-in-out infinite;
+}
+
+.animate-signal-wave {
+  animation: signal-wave 4s linear infinite;
+}

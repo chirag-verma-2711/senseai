@@ -156,14 +156,14 @@ export function Navigation() {
             <div className="h-6 w-px bg-gradient-to-b from-transparent via-black/30 to-transparent transform -rotate-12" />
 
             {/* Contact Us */}
-            <MenuButton label="Contact Us" onClick={() => scrollToSection('pitch')} />
+            <MenuButton label="Pitch to Us" onClick={() => scrollToSection('pitch')} />
             
             <div className="h-6 w-px bg-gradient-to-b from-transparent via-black/30 to-transparent transform -rotate-12" />
 
             {/* Apply for Investment - CTA Button */}
             <button
               onClick={() => scrollToSection('pitch')}
-              className="ml-2 px-6 py-2 text-black/80 hover:text-black rounded-full hover:shadow-[0_0_20px_rgba(147,51,234,0.4)] transition-all duration-300 hover:scale-105"
+              className="ml-2 px-6 py-2  text-black rounded-full shadow-[0_0_20px_rgba(147,51,234,0.4)] transition-all duration-300 scale-105"
             >
               Apply for Investment
             </button>
